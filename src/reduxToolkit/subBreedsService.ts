@@ -10,12 +10,10 @@ const subBreedsService = createSlice({
 
   reducers: {
     setSubBreeds: (state, { payload }) => 
-    // console.log('payload :>> ', payload),
     {
       state.subBreeds = payload?.data?.message || []
     },
     setBreedsSubBreeds: (state, { payload }) => 
-    // console.log('payload :>> ', payload),
     {
       state.breedSubBreed = payload || 
       {}
